@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-dark;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-drama {
+    @apply font-serif italic;
+  }
+  .text-data {
+    @apply font-mono tracking-tight;
+  }
+  .magnetic-btn {
+    @apply relative overflow-hidden transition-transform duration-300 hover:scale-[1.03];
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-[1px];
+  }
+}
