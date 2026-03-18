@@ -43,7 +43,7 @@ const Hero = () => {
           <h1 className="hero-element text-background font-sans font-bold text-3xl md:text-5xl tracking-tighter leading-[1.1] mb-2">
             The Roots Dentistry
           </h1>
-          <h2 className="hero-element font-bold text-white text-4xl md:text-6xl lg:text-8xl leading-[1.1] max-w-4xl">
+          <h2 className="hero-element font-normal text-white text-4xl md:text-6xl lg:text-8xl leading-[1.1] max-w-4xl">
             Best Clinic in Talaghattapura.
           </h2>
         </div>

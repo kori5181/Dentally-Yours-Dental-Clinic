@@ -21,12 +21,7 @@ const Footer = () => {
               Ultra-modern multi-speciality dental clinic providing flawless and soothing dental experiences in Talaghattapura, Bengaluru.
             </p>
             
-            {/* System Status */}
-            <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full mt-auto backdrop-blur-md">
-               <div className="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.8)] animate-[pulse_2s_infinite]" />
-               <span className="text-data text-[10px] uppercase tracking-widest text-white/70">System Operational</span>
-            </div>
-         </div>
+          </div>
          
          {/* Nav Columns */}
          <div className="md:col-span-3 flex flex-col gap-6">

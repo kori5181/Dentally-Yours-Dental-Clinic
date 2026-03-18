@@ -13,17 +13,17 @@ const servicesList = [
   {
     title: "Cosmetics & Veneers",
     desc: "Enhance your smile with precision cosmetic solutions.",
-    img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=800&auto=format&fit=crop"
+    img: "/assets/cosmetics.jpg"
   },
   {
     title: "Restorative Dentistry",
     desc: "Repairing and restoring damaged or missing teeth.",
-    img: "https://images.unsplash.com/photo-1598256989445-56ed3309e3e3?q=80&w=800&auto=format&fit=crop"
+    img: "/assets/restorative.jpg"
   },
   {
     title: "Orthodontics & Aligners",
     desc: "Straighten your teeth seamlessly and comfortably.",
-    img: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop"
+    img: "/assets/orthodontics.jpg"
   },
   {
     title: "Implants",
@@ -33,7 +33,7 @@ const servicesList = [
   {
     title: "Pediatric Dentistry",
     desc: "Gentle and friendly dental care for children.",
-    img: "https://images.unsplash.com/photo-1581594549595-35f110c4f800?q=80&w=800&auto=format&fit=crop"
+    img: "/assets/pediatric.jpg"
   }
 ];
 
