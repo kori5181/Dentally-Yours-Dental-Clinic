@@ -2,60 +2,47 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { 
-  Stethoscope, 
-  Activity, 
-  Search, 
-  Scissors, 
-  ShieldAlert, 
-  HeartPulse, 
-  ShieldCheck 
+  UserPlus, 
+  Settings, 
+  MonitorSmartphone, 
+  FileText, 
+  ShieldCheck, 
+  Users
 } from 'lucide-react';
 import { cn } from './Navbar';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const servicesList = [
+const featuresList = [
   {
-    title: "Routine Exams and Cleanings",
-    desc: "Regular check-ups (recommended every six months) include a thorough examination of teeth, gums, and mouth. Professional cleanings remove plaque and tartar buildup.",
-    icon: <Stethoscope strokeWidth={1.5} className="w-8 h-8 text-primary" />,
-    colSpan: "md:col-span-2 lg:col-span-1"
+    title: "Comfort and Convenience",
+    desc: "Your comfort and convenience are our top priorities at The Roots Dentistry. From our warm and inviting office environment to our flexible scheduling options.",
+    icon: <UserPlus strokeWidth={1.5} className="w-8 h-8 text-dark" />,
   },
   {
-    title: "Dental X-rays",
-    desc: "Imaging techniques such as bitewing and panoramic X-rays help diagnose hidden dental problems like decay between teeth, impacted teeth, and bone loss.",
-    icon: <Activity strokeWidth={1.5} className="w-8 h-8 text-accent" />,
-    colSpan: "md:col-span-1"
+    title: "Customized Treatment Plans",
+    desc: "We understand your smile is unique. We take the time to listen to your concerns and goals, crafting a personalized treatment plan to achieve your desired results.",
+    icon: <Settings strokeWidth={1.5} className="w-8 h-8 text-dark" />,
   },
   {
-    title: "Cavity Detection and Fillings",
-    desc: "Early detection of tooth decay followed by treatment with tooth-colored composite fillings to restore damaged teeth beautifully and functionally.",
-    icon: <Search strokeWidth={1.5} className="w-8 h-8 text-primary" />,
-    colSpan: "md:col-span-1"
+    title: "Modern Technology",
+    desc: "Modern technology in dentistry has revolutionized patient care through advancements such as digital imaging, which provides precise and detailed visuals.",
+    icon: <MonitorSmartphone strokeWidth={1.5} className="w-8 h-8 text-dark" />,
   },
   {
-    title: "Tooth Extractions",
-    desc: "Gentle and safe removal of severely decayed, damaged, or impacted teeth when saving the tooth is no longer possible.",
-    icon: <Scissors strokeWidth={1.5} className="w-8 h-8 text-accent" />,
-    colSpan: "md:col-span-1"
+    title: "Affordable Service",
+    desc: "We believe high-quality dentistry shouldn't break the bank. We offer competitive rates and transparent pricing, so you can make informed decisions about your oral health.",
+    icon: <FileText strokeWidth={1.5} className="w-8 h-8 text-dark" />,
   },
   {
-    title: "Root Canal Therapy",
-    desc: "Expert treatment to save infected or inflamed tooth pulp, relieving pain and preventing tooth loss in a soothing environment.",
-    icon: <ShieldAlert strokeWidth={1.5} className="w-8 h-8 text-primary" />,
-    colSpan: "md:col-span-1 lg:col-span-2"
+    title: "Premium Dental Care",
+    desc: "Experience the difference a healthy smile makes! We use top-of-the-line materials and equipment to deliver exceptional results and a comfortable experience.",
+    icon: <ShieldCheck strokeWidth={1.5} className="w-8 h-8 text-dark" />,
   },
   {
-    title: "Gum Disease Evaluation",
-    desc: "Assessment of gum health and expert treatment for gingivitis or periodontitis, including scaling and root planing for deeper cleaning.",
-    icon: <HeartPulse strokeWidth={1.5} className="w-8 h-8 text-accent" />,
-    colSpan: "md:col-span-1"
-  },
-  {
-    title: "Preventive Treatments",
-    desc: "Application of fluoride to strengthen enamel and dental sealants to protect children's and adults' molars from future decay.",
-    icon: <ShieldCheck strokeWidth={1.5} className="w-8 h-8 text-primary" />,
-    colSpan: "md:col-span-2"
+    title: "Happy Clients",
+    desc: "Our commitment to exceptional care has earned the trust of countless satisfied patients. Join our growing community of happy smiles!",
+    icon: <Users strokeWidth={1.5} className="w-8 h-8 text-dark" />,
   }
 ];
 
@@ -65,7 +52,7 @@ const Features = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        ".service-card",
+        ".feature-item",
         { y: 50, opacity: 0 },
         {
           y: 0,
@@ -84,32 +71,30 @@ const Features = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="services" className="py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-background z-20 relative">
+    <section ref={sectionRef} id="features" className="py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#e8f1fb] z-20 relative">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col mb-16">
-          <h2 className="font-sans font-bold text-4xl md:text-5xl text-dark tracking-tight leading-tight">
-            Basic Clinic <span className="text-primary tracking-normal">Services.</span>
+        <div className="flex flex-col mb-20 text-center items-center">
+          <span className="font-bold text-[#63a0d9] uppercase tracking-wider text-sm mb-2">What We Do</span>
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-[#2a68a6] tracking-tight leading-tight">
+            Why Choose us?
           </h2>
-          <p className="font-sans text-dark/70 text-lg md:text-xl mt-4 max-w-2xl font-light">
-            Forming the foundation of preventive and routine oral care, focusing on maintaining long-term dental health.
+          <p className="font-sans text-dark/70 text-lg md:text-[17px] mt-6 max-w-3xl font-light leading-relaxed">
+            At <strong>The Roots Dentistry</strong>, we believe in providing our patients with treatments which includes their involvement at all times. Our patients are the stars where we have set a standard, in providing a dental care with a feeling of being at home.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {servicesList.map((service, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+          {featuresList.map((feature, idx) => (
             <div 
               key={idx} 
-              className={cn(
-                "service-card bg-white rounded-3xl p-8 md:p-10 border border-primary/5 shadow-sm hover:shadow-xl hover-lift transition-all flex flex-col group",
-                service.colSpan
-              )}
+              className="feature-item flex flex-col items-start text-left"
             >
-              <div className="bg-background w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
-                {service.icon}
+              <div className="mb-6 group-hover:scale-110 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+                {feature.icon}
               </div>
-              <h3 className="font-sans font-bold text-xl md:text-2xl text-dark mb-4 group-hover:text-primary transition-colors">{service.title}</h3>
-              <p className="text-dark/65 text-[15px] md:text-base font-sans leading-relaxed flex-grow">
-                {service.desc}
+              <h3 className="font-sans font-bold text-xl text-[#63a0d9] mb-4">{feature.title}</h3>
+              <p className="text-dark/80 text-[15px] md:text-base font-sans leading-relaxed">
+                {feature.desc}
               </p>
             </div>
           ))}

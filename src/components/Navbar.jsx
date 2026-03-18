@@ -32,10 +32,10 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex items-center gap-8 font-sans text-sm font-semibold tracking-wide">
+        <a href="#about" className="hover-lift hover:text-accent transition-colors">About</a>
+        <a href="#features" className="hover-lift hover:text-accent transition-colors">Why Us</a>
         <a href="#services" className="hover-lift hover:text-accent transition-colors">Services</a>
-        <a href="#philosophy" className="hover-lift hover:text-accent transition-colors">Philosophy</a>
-        <a href="#protocol" className="hover-lift hover:text-accent transition-colors">Protocol</a>
-        <a href="#doctors" className="hover-lift hover:text-accent transition-colors">Doctors</a>
+        <a href="#doctors" className="hover-lift hover:text-accent transition-colors">Team</a>
       </div>
 
       <a 

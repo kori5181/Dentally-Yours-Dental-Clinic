@@ -38,28 +38,23 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 pb-20 md:pb-32 flex flex-col items-start gap-6">
+      <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 pb-20 md:pb-32 flex flex-col items-start gap-6 pt-24 md:pt-0">
         <div className="flex flex-col">
-          <h1 className="hero-element text-background font-sans font-bold text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-[1.1]">
-            Precision care is the
+          <h1 className="hero-element text-background font-sans font-bold text-3xl md:text-5xl tracking-tighter leading-[1.1] mb-2">
+            The Roots Dentistry
           </h1>
-          <h2 className="hero-element font-serif italic text-accent text-6xl md:text-8xl lg:text-9xl leading-none mt-2">
-            Standard.
+          <h2 className="hero-element font-bold text-white text-4xl md:text-6xl lg:text-8xl leading-[1.1] max-w-4xl">
+            Best Clinic in Talaghattapura.
           </h2>
         </div>
         
-        <p className="hero-element text-background/80 font-sans text-lg md:text-xl max-w-lg mt-4 font-light">
-          The Roots Dentistry — Ultra-modern multi-speciality dental clinic providing flawless and soothing dental experiences in Talaghattapura.
-        </p>
-
         <a 
           href="https://wa.me/9187348684" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="hero-element magnetic-btn mt-6 bg-accent text-white px-8 py-4 rounded-full font-sans font-bold tracking-wide flex items-center gap-3 hover:bg-opacity-90 group transition-all inline-flex"
+          className="hero-element magnetic-btn mt-6 bg-accent text-white px-8 py-4 rounded-md font-sans font-bold tracking-wide flex items-center gap-3 hover:bg-opacity-90 transition-all inline-flex"
         >
-          Book a Clinic Visit
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          Book Appointment
         </a>
       </div>
     </section>
