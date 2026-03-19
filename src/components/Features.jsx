@@ -17,32 +17,32 @@ const featuresList = [
   {
     title: "Comfort and Convenience",
     desc: "Your comfort and convenience are our top priorities at The Roots Dentistry. From our warm and inviting office environment to our flexible scheduling options.",
-    icon: <UserPlus strokeWidth={1.5} className="w-8 h-8 text-dark" />,
+    icon: <UserPlus strokeWidth={1.5} className="w-7 h-7" />,
   },
   {
     title: "Customized Treatment Plans",
     desc: "We understand your smile is unique. We take the time to listen to your concerns and goals, crafting a personalized treatment plan to achieve your desired results.",
-    icon: <Settings strokeWidth={1.5} className="w-8 h-8 text-dark" />,
+    icon: <Settings strokeWidth={1.5} className="w-7 h-7" />,
   },
   {
     title: "Modern Technology",
     desc: "Modern technology in dentistry has revolutionized patient care through advancements such as digital imaging, which provides precise and detailed visuals.",
-    icon: <MonitorSmartphone strokeWidth={1.5} className="w-8 h-8 text-dark" />,
+    icon: <MonitorSmartphone strokeWidth={1.5} className="w-7 h-7" />,
   },
   {
     title: "Affordable Service",
     desc: "We believe high-quality dentistry shouldn't break the bank. We offer competitive rates and transparent pricing, so you can make informed decisions about your oral health.",
-    icon: <FileText strokeWidth={1.5} className="w-8 h-8 text-dark" />,
+    icon: <FileText strokeWidth={1.5} className="w-7 h-7" />,
   },
   {
     title: "Premium Dental Care",
     desc: "Experience the difference a healthy smile makes! We use top-of-the-line materials and equipment to deliver exceptional results and a comfortable experience.",
-    icon: <ShieldCheck strokeWidth={1.5} className="w-8 h-8 text-dark" />,
+    icon: <ShieldCheck strokeWidth={1.5} className="w-7 h-7" />,
   },
   {
     title: "Happy Clients",
     desc: "Our commitment to exceptional care has earned the trust of countless satisfied patients. Join our growing community of happy smiles!",
-    icon: <Users strokeWidth={1.5} className="w-8 h-8 text-dark" />,
+    icon: <Users strokeWidth={1.5} className="w-7 h-7" />,
   }
 ];
 
@@ -73,17 +73,22 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {featuresList.map((feature, idx) => (
             <div 
               key={idx} 
-              className="feature-item flex flex-col items-start text-left"
+              className="feature-item group flex flex-col items-start text-left bg-white/70 hover:bg-white p-8 md:p-10 rounded-[2.5rem] border border-white/50 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] cursor-default overflow-hidden relative"
             >
-              <div className="mb-6 group-hover:scale-110 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
-                {feature.icon}
+              {/* Subtle hover gradient bloom behind icon */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              
+              <div className="mb-8 w-14 h-14 rounded-2xl bg-[#e8f1fb] flex items-center justify-center text-[#2a68a6] group-hover:bg-[#2a68a6] group-hover:text-white transition-colors duration-500 ease-out group-hover:scale-110 shadow-sm relative z-10 box-border">
+                <div className="transform transition-transform duration-500 group-hover:scale-[1.15] group-hover:rotate-6">
+                  {feature.icon}
+                </div>
               </div>
-              <h3 className="font-sans font-bold text-xl text-[#63a0d9] mb-4">{feature.title}</h3>
-              <p className="text-dark/80 text-[15px] md:text-base font-sans leading-relaxed">
+              <h3 className="font-sans font-bold text-xl text-[#2a68a6] mb-3 relative z-10">{feature.title}</h3>
+              <p className="text-dark/70 text-[15px] md:text-base font-sans leading-relaxed relative z-10">
                 {feature.desc}
               </p>
             </div>
