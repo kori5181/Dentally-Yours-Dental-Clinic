@@ -11,10 +11,11 @@ const CTA = () => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         ctaRef.current,
-        { scale: 0.95, opacity: 0 },
+        { scale: 0.95, opacity: 0, y: 30 },
         {
           scale: 1,
           opacity: 1,
+          y: 0,
           duration: 1,
           ease: "power3.out",
           scrollTrigger: {

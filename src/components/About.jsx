@@ -10,21 +10,11 @@ const About = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".about-element",
-        { y: 40, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          stagger: 0.2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 75%",
-          }
-        }
-      );
+      gsap.set(".about-element", { y: 50, opacity: 0 });
+      ScrollTrigger.batch(".about-element", {
+        onEnter: (batch) => gsap.to(batch, { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out", overwrite: true }),
+        start: "top 85%",
+      });
     }, sectionRef);
 
     return () => ctx.revert();
