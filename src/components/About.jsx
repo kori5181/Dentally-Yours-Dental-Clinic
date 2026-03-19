@@ -76,8 +76,8 @@ const About = () => {
         {/* Image Content */}
         <div className="about-element relative w-full aspect-square md:aspect-[4/3] lg:aspect-square overflow-hidden rounded-2xl">
           <img 
-            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2000&auto=format&fit=crop" 
-            alt="Dentist treating a patient" 
+            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=2000" 
+            alt="Dental clinic interior" 
             className="w-full h-full object-cover"
           />
         </div>

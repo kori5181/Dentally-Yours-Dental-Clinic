@@ -29,8 +29,8 @@ const Hero = () => {
       {/* Background Image & Gradient overlay */}
       <div className="absolute inset-0 z-0 bg-dark">
         <img 
-          src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2669&auto=format&fit=crop" 
-          alt="Modern dental clinic" 
+          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2669" 
+          alt="Modern dental clinic interior" 
           className="w-full h-full object-cover scale-[1.02] opacity-40 mix-blend-luminosity"
         />
         {/* Soft Teal to Slate Gradient Overlay */}
