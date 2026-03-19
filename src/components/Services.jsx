@@ -21,14 +21,19 @@ const servicesList = [
     img: "/assets/restorative.jpg"
   },
   {
-    title: "Orthodontics & Aligners",
-    desc: "Straighten your teeth seamlessly and comfortably.",
+    title: "Orthodontics",
+    desc: "Effective treatments to align and straighten your teeth.",
     img: "/assets/orthodontics.jpg"
+  },
+  {
+    title: "Aligners",
+    desc: "Straighten your teeth seamlessly and comfortably with clear aligners.",
+    img: "/assets/aligners.jpg"
   },
   {
     title: "Implants",
     desc: "Permanent and natural-looking tooth replacements.",
-    img: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=800&auto=format&fit=crop"
+    img: "/assets/Implants.jpg"
   },
   {
     title: "Pediatric Dentistry",

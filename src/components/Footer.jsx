@@ -55,8 +55,8 @@ const Footer = () => {
 
             <div className="font-sans text-white/50 text-sm leading-relaxed font-medium mt-2">
               Mon - Sun<br/>
-              09:00 AM - 02:00 PM<br/>
-              04:00 PM - 09:00 PM
+              10:00 AM - 02:00 PM<br/>
+              04:00 PM - 08:00 PM
             </div>
          </div>
       </div>
