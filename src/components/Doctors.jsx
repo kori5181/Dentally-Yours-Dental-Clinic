@@ -30,19 +30,19 @@ const Doctors = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full max-w-4xl">
           <div className="doc-element aspect-square md:aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl drop-shadow-sm border border-primary/5">
-            <img 
-              src="https://images.unsplash.com/photo-1594824436951-7f12bc502f9d?q=80&w=800&auto=format&fit=crop" 
-              alt="Dr. Sowndarya" 
+            <img
+              src="https://images.unsplash.com/photo-1594824436951-7f12bc502f9d?q=80&w=800&auto=format&fit=crop"
+              alt="Dr. Sowndarya"
               className="w-full h-full object-cover object-top"
             />
           </div>
-          
+
           <div className="doc-element flex flex-col items-start text-left gap-6">
             <div>
               <h3 className="font-sans font-bold text-3xl md:text-4xl text-dark mb-2">Dr. Sowndarya</h3>
-              <p className="text-[#63a0d9] font-bold text-lg">Chief Dental Surgeon</p>
+              <p className="text-[#63a0d9] font-bold text-lg">Chief Dentist</p>
             </div>
-            
+
             <p className="text-dark/70 leading-relaxed text-lg">
               Dr. Sowndarya is a passionate and experienced dentist dedicated to providing the highest quality of care to her patients. With a gentle touch and a friendly demeanor, she ensures every visit is comfortable and stress-free.
             </p>
@@ -50,9 +50,9 @@ const Doctors = () => {
               Her expertise spans across various fields of dentistry, ensuring that you receive comprehensive treatment tailored to your specific needs.
             </p>
 
-            <a 
-              href="https://wa.me/9187348684" 
-              target="_blank" 
+            <a
+              href="https://wa.me/9187348684"
+              target="_blank"
               rel="noopener noreferrer"
               className="magnetic-btn bg-[#2a68a6] text-white px-8 py-3.5 rounded-md font-sans font-bold tracking-wide hover:bg-opacity-90 transition-all inline-block shadow-md"
             >
