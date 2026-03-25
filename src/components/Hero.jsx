@@ -31,6 +31,7 @@ const Hero = () => {
         <img 
           src="/assets/homepage pic.png" 
           alt="The Roots Dentistry Clinic" 
+          fetchPriority="high"
           className="w-full h-full object-cover object-right md:object-center scale-[1.05] opacity-[0.85]"
         />
         {/* Sleek Dark Overlays for Text Readability */}

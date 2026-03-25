@@ -37,10 +37,10 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex items-center gap-8 font-sans text-sm font-semibold tracking-wide">
-        <a href="#about" className="hover-lift hover:text-accent transition-colors">About</a>
-        <a href="#features" className="hover-lift hover:text-accent transition-colors">Why Us</a>
         <a href="#services" className="hover-lift hover:text-accent transition-colors">Services</a>
-        <a href="#doctors" className="hover-lift hover:text-accent transition-colors">Team</a>
+        <a href="#philosophy" className="hover-lift hover:text-accent transition-colors">Philosophy</a>
+        <a href="#protocol" className="hover-lift hover:text-accent transition-colors">Protocol</a>
+        <a href="#doctors" className="hover-lift hover:text-accent transition-colors">Doctors</a>
       </div>
 
       <div className="flex items-center gap-3">
@@ -73,10 +73,10 @@ const Navbar = () => {
         isOpen ? "opacity-100 scale-y-100 pointer-events-auto" : "opacity-0 scale-y-0 pointer-events-none"
       )}>
         <div className="flex flex-col p-6 gap-6 font-sans text-lg font-bold text-dark text-center">
-          <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors border-b border-primary/5 pb-4">About</a>
-          <a href="#features" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors border-b border-primary/5 pb-4">Why Us</a>
           <a href="#services" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors border-b border-primary/5 pb-4">Services</a>
-          <a href="#doctors" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">Team</a>
+          <a href="#philosophy" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors border-b border-primary/5 pb-4">Philosophy</a>
+          <a href="#protocol" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors border-b border-primary/5 pb-4">Protocol</a>
+          <a href="#doctors" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">Doctors</a>
         </div>
       </div>
     </nav>
