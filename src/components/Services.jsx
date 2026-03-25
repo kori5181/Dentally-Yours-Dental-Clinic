@@ -60,8 +60,8 @@ const Services = () => {
     <section ref={sectionRef} id="services" className="py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-white z-20 relative">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col mb-16 text-center items-center">
-          <span className="font-bold text-[#63a0d9] uppercase tracking-wider text-sm mb-2">Services</span>
-          <h2 className="font-sans font-bold text-4xl md:text-5xl text-[#2a68a6] tracking-tight leading-tight">
+          <span className="font-bold text-accent uppercase tracking-wider text-sm mb-2">Services</span>
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-primary tracking-tight leading-tight">
             Our Dental Services
           </h2>
         </div>

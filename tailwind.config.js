@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#F0F9FF', // Sky 50 (Ultra light calming blue-tinted white)
-        primary: '#1D4ED8', // Blue 700 (Trustworthy, professional dental blue)
-        accent: '#06B6D4', // Cyan 500 (Clean, soothing medical cyan)
-        dark: '#0F172A', // Slate 900 (High contrast text, retains softness over pure black)
+        background: '#FFFFFF', // Pure White
+        primary: '#966E58', // Beige
+        accent: '#D6C0B3', // Lighter Beige
+        dark: '#4A3B32', // Darker warm contrast
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'Outfit', 'sans-serif'],

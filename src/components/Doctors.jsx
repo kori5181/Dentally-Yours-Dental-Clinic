@@ -22,8 +22,8 @@ const Doctors = () => {
     <section ref={sectionRef} id="doctors" className="py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-background z-20 relative">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <div className="flex flex-col mb-16 text-center items-center doc-element">
-          <span className="font-bold text-[#63a0d9] uppercase tracking-wider text-sm mb-2">Team</span>
-          <h2 className="font-sans font-bold text-4xl md:text-5xl text-[#2a68a6] tracking-tight leading-tight">
+          <span className="font-bold text-accent uppercase tracking-wider text-sm mb-2">Team</span>
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-primary tracking-tight leading-tight">
             Our Team
           </h2>
         </div>
@@ -40,7 +40,7 @@ const Doctors = () => {
           <div className="doc-element flex flex-col items-start text-left gap-6">
             <div>
               <h3 className="font-sans font-bold text-3xl md:text-4xl text-dark mb-2">Dr. Sowndarya</h3>
-              <p className="text-[#63a0d9] font-bold text-lg">Chief Dentist</p>
+              <p className="text-accent font-bold text-lg">Chief Dentist</p>
             </div>
 
             <p className="text-dark/70 leading-relaxed text-lg">
@@ -54,7 +54,7 @@ const Doctors = () => {
               href="https://wa.me/9187348684"
               target="_blank"
               rel="noopener noreferrer"
-              className="magnetic-btn bg-[#2a68a6] text-white px-8 py-3.5 rounded-md font-sans font-bold tracking-wide hover:bg-opacity-90 transition-all inline-block shadow-md"
+              className="magnetic-btn bg-primary text-white px-8 py-3.5 rounded-md font-sans font-bold tracking-wide hover:bg-opacity-90 transition-all inline-block shadow-md"
             >
               Book a Call
             </a>

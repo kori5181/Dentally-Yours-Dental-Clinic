@@ -33,7 +33,7 @@ const CTA = () => {
     <section className="px-6 md:px-16 lg:px-24 mb-12">
       <div 
         ref={ctaRef}
-        className="max-w-7xl mx-auto rounded-3xl bg-[#1c5f9f] text-white p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 shadow-xl overflow-hidden relative"
+        className="max-w-7xl mx-auto rounded-3xl bg-primary text-white p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 shadow-xl overflow-hidden relative"
       >
         {/* Decorative elements */}
         <div className="absolute -top-24 -right-24 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl"></div>
@@ -56,7 +56,7 @@ const CTA = () => {
           href="https://wa.me/9187348684" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="relative z-10 magnetic-btn bg-[#65b263] text-white px-8 py-4 rounded-md font-sans font-bold tracking-wide hover:bg-opacity-90 transition-all inline-block shadow-lg text-lg flex-shrink-0"
+          className="relative z-10 magnetic-btn bg-accent text-white px-8 py-4 rounded-md font-sans font-bold tracking-wide hover:bg-opacity-90 transition-all inline-block shadow-lg text-lg flex-shrink-0"
         >
           Book Appointment
         </a>

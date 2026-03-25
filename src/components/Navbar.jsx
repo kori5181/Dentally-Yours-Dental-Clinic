@@ -28,8 +28,15 @@ const Navbar = () => {
           : "w-[95%] md:w-[850px] bg-transparent text-white"
       )}
     >
-      <div className="font-sans font-bold text-xl tracking-tight flex-shrink-0">
-        The Roots Dentistry<span className="text-accent">.</span>
+      <div className="flex-shrink-0 flex items-center">
+        <img 
+          src="/assets/throotdentistrylogo .png" 
+          alt="The Roots Dentistry" 
+          className={cn(
+            "h-12 w-auto object-contain transition-all duration-300", 
+            scrolled ? "mix-blend-multiply" : "invert grayscale contrast-200 mix-blend-screen"
+          )} 
+        />
       </div>
       
       <div className="hidden md:flex items-center gap-8 font-sans text-sm font-semibold tracking-wide">

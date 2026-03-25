@@ -14,8 +14,12 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-white/10 pb-16 mb-12">
          {/* Brand Column */}
          <div className="md:col-span-5 flex flex-col items-start">
-            <div className="font-sans font-bold text-3xl tracking-tight mb-6 flex items-center gap-1 text-white">
-              The Roots Dentistry<span className="text-accent text-4xl leading-none">.</span>
+            <div className="mb-6 flex items-center gap-1">
+              <img 
+                src="/assets/throotdentistrylogo .png" 
+                alt="The Roots Dentistry" 
+                className="h-16 w-auto object-contain invert grayscale contrast-200 mix-blend-screen" 
+              />
             </div>
             <p className="font-sans text-white/50 max-w-sm mb-12 font-light leading-relaxed">
               Ultra-modern multi-speciality dental clinic providing flawless and soothing dental experiences in Talaghattapura, Bengaluru.

@@ -67,7 +67,7 @@ const About = () => {
             href="https://wa.me/9187348684" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="about-element magnetic-btn mt-6 bg-[#63a0d9] text-white px-8 py-3 rounded-md font-sans font-bold tracking-wide hover:bg-opacity-90 transition-all text-center"
+            className="about-element magnetic-btn mt-6 bg-primary text-white px-8 py-3 rounded-md font-sans font-bold tracking-wide hover:bg-opacity-90 transition-all text-center"
           >
             Call Now
           </a>

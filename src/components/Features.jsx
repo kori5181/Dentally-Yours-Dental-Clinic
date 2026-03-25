@@ -61,11 +61,11 @@ const Features = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="features" className="py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-[#e8f1fb] z-20 relative">
+    <section ref={sectionRef} id="features" className="py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-primary/5 z-20 relative">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col mb-20 text-center items-center">
-          <span className="font-bold text-[#63a0d9] uppercase tracking-wider text-sm mb-2">What We Do</span>
-          <h2 className="font-sans font-bold text-4xl md:text-5xl text-[#2a68a6] tracking-tight leading-tight">
+          <span className="font-bold text-accent uppercase tracking-wider text-sm mb-2">What We Do</span>
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-primary tracking-tight leading-tight">
             Why Choose us?
           </h2>
           <p className="font-sans text-dark/70 text-lg md:text-[17px] mt-6 max-w-3xl font-light leading-relaxed">
@@ -82,12 +82,12 @@ const Features = () => {
               {/* Subtle hover gradient bloom behind icon */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               
-              <div className="mb-8 w-14 h-14 rounded-2xl bg-[#e8f1fb] flex items-center justify-center text-[#2a68a6] group-hover:bg-[#2a68a6] group-hover:text-white transition-colors duration-500 ease-out group-hover:scale-110 shadow-sm relative z-10 box-border">
+              <div className="mb-8 w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500 ease-out group-hover:scale-110 shadow-sm relative z-10 box-border">
                 <div className="transform transition-transform duration-500 group-hover:scale-[1.15] group-hover:rotate-6">
                   {feature.icon}
                 </div>
               </div>
-              <h3 className="font-sans font-bold text-xl text-[#2a68a6] mb-3 relative z-10">{feature.title}</h3>
+              <h3 className="font-sans font-bold text-xl text-primary mb-3 relative z-10">{feature.title}</h3>
               <p className="text-dark/70 text-[15px] md:text-base font-sans leading-relaxed relative z-10">
                 {feature.desc}
               </p>
