@@ -29,10 +29,10 @@ const Navbar = () => {
       )}
     >
       <div className="flex-shrink-0 flex items-center">
-        <img -54.03wm8q 32T1RQ  E1WS
-        src="/assets/throotdentistrylogo .png"
-        alt="The Roots Dentistry"
-        className="h-14 md:h-16 w-auto object-contain bg-white rounded-2xl p-1 shadow-sm transition-all duration-300" 
+        <img 
+          src="/assets/throotdentistrylogo .png"
+          alt="The Roots Dentistry"
+          className="h-14 md:h-16 w-auto object-contain bg-white rounded-2xl p-1 shadow-sm transition-all duration-300" 
         />
       </div>
 
