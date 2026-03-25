@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Phone } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,9 +57,9 @@ const Doctors = () => {
               href="https://wa.me/9187348684"
               target="_blank"
               rel="noopener noreferrer"
-              className="magnetic-btn bg-primary text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300 inline-flex items-center justify-center"
+              className="magnetic-btn bg-primary text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300 inline-flex items-center justify-center gap-3"
             >
-              Book a Call
+              <Phone className="w-5 h-5" /> Book a Call
             </a>
           </div>
         </div>

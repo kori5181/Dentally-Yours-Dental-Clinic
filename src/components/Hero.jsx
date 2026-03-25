@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { ArrowRight } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -65,7 +65,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="hero-element magnetic-btn mt-6 bg-accent text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest flex items-center justify-center gap-3 hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300 inline-flex"
           >
-            Book Appointment
+            <Phone className="w-5 h-5" /> Book Appointment
           </a>
         </div>
       </div>
