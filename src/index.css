@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.will-animate {
+  will-change: transform, opacity;
+}
+
 @layer base {
   body {
     @apply bg-background text-dark;

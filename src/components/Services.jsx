@@ -47,10 +47,11 @@ const Services = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(".srv-card", { y: 50, opacity: 0 });
-      ScrollTrigger.batch(".srv-card", {
-        onEnter: (batch) => gsap.to(batch, { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out", overwrite: true }),
-        start: "top 85%",
+      gsap.set(".srv-grid", { y: 30, opacity: 0 });
+      ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: "top 80%",
+        onEnter: () => gsap.to(".srv-grid", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out", overwrite: true })
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -66,7 +67,7 @@ const Services = () => {
           </h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="srv-grid will-animate grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {servicesList.map((service, idx) => (
             <div 
               key={idx} 
@@ -75,6 +76,7 @@ const Services = () => {
               <img 
                 src={service.img} 
                 alt={service.title} 
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 transition-opacity duration-500 group-hover:opacity-90" />

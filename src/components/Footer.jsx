@@ -3,13 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-dark text-white rounded-t-[4rem] px-6 md:px-16 lg:px-24 pt-24 pb-12 mt-20 relative z-30 overflow-hidden">
-      {/* Subtle Noise Texture on Footer */}
-      <svg className="pointer-events-none absolute inset-0 z-0 h-full w-full opacity-5" style={{ mixBlendMode: "overlay" }}>
-        <filter id="noiseFilterFooter">
-          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
-        </filter>
-        <rect width="100%" height="100%" filter="url(#noiseFilterFooter)" />
-      </svg>
+
       
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-white/10 pb-16 mb-12">
          {/* Brand Column */}

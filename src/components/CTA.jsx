@@ -36,8 +36,7 @@ const CTA = () => {
         className="max-w-7xl mx-auto rounded-3xl bg-primary text-white p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 shadow-xl overflow-hidden relative"
       >
         {/* Decorative elements */}
-        <div className="absolute -top-24 -right-24 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl"></div>
+        
 
         <div className="flex relative z-10 flex-col gap-4 text-center md:text-left align-middle justify-center max-w-2xl">
           <div className="flex items-center gap-4 justify-center md:justify-start hidden md:flex">

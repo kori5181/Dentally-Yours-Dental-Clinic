@@ -51,10 +51,11 @@ const Features = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(".feature-item", { y: 50, opacity: 0 });
-      ScrollTrigger.batch(".feature-item", {
-        onEnter: (batch) => gsap.to(batch, { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out", overwrite: true }),
-        start: "top 85%",
+      gsap.set(".feature-grid", { y: 30, opacity: 0 });
+      ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: "top 80%",
+        onEnter: () => gsap.to(".feature-grid", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out", overwrite: true })
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -73,15 +74,13 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="feature-grid will-animate grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {featuresList.map((feature, idx) => (
             <div 
               key={idx} 
-              className="feature-item group flex flex-col items-start text-left bg-white/70 hover:bg-white p-8 md:p-10 rounded-[2.5rem] border border-white/50 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] cursor-default overflow-hidden relative"
+              className="group flex flex-col items-start text-left bg-white/70 hover:bg-white p-8 md:p-10 rounded-[2.5rem] border border-white/50 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] cursor-default overflow-hidden relative"
             >
-              {/* Subtle hover gradient bloom behind icon */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              
+
               <div className="mb-8 w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center text-black group-hover:bg-primary group-hover:text-white transition-colors duration-500 ease-out group-hover:scale-110 shadow-sm relative z-10 box-border">
                 <div className="transform transition-transform duration-500 group-hover:scale-[1.15] group-hover:rotate-6">
                   {feature.icon}

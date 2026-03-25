@@ -10,10 +10,11 @@ const About = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(".about-element", { y: 50, opacity: 0 });
-      ScrollTrigger.batch(".about-element", {
-        onEnter: (batch) => gsap.to(batch, { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out", overwrite: true }),
-        start: "top 85%",
+      gsap.set(".animate-fade", { y: 30, opacity: 0 });
+      ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: "top 80%",
+        onEnter: () => gsap.to(".animate-fade", { y: 0, opacity: 1, duration: 0.6, ease: "power2.out", overwrite: true })
       });
     }, sectionRef);
 
@@ -24,20 +25,20 @@ const About = () => {
     <section ref={sectionRef} id="about" className="py-20 md:py-32 px-6 md:px-16 lg:px-24 bg-white z-20 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Text Content */}
-        <div className="flex flex-col items-start gap-8">
+        <div className="animate-fade will-animate flex flex-col items-start gap-8">
           <div>
-            <span className="about-element font-bold text-accent uppercase tracking-wider text-sm mb-2 block">
+            <span className="font-bold text-accent uppercase tracking-wider text-sm mb-2 block">
               About Our Clinic
             </span>
-            <h2 className="about-element font-sans font-bold text-4xl md:text-5xl text-dark tracking-tight leading-tight mb-6">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-dark tracking-tight leading-tight mb-6">
               Welcome to The Roots Dentistry
             </h2>
-            <p className="about-element text-dark/70 text-lg leading-relaxed mb-6">
+            <p className="text-dark/70 text-lg leading-relaxed mb-6">
               Welcome to The Roots Dentistry where your journey to optimal oral health and a confident smile begins. Our team of experienced dentists is committed to providing personalized care in a warm and welcoming environment.
             </p>
           </div>
 
-          <div className="about-element flex flex-col gap-6 w-full">
+          <div className="flex flex-col gap-6 w-full">
             <div className="flex items-start gap-4">
               <div className="mt-1 bg-primary/10 p-3 rounded-full text-primary">
                 <Users className="w-6 h-6" />
@@ -67,17 +68,18 @@ const About = () => {
             href="https://wa.me/9187348684" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="about-element magnetic-btn mt-6 bg-primary text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest inline-flex items-center justify-center hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300"
+            className="magnetic-btn mt-6 bg-primary text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest inline-flex items-center justify-center hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300"
           >
             Call Now
           </a>
         </div>
 
         {/* Image Content */}
-        <div className="about-element relative w-full aspect-square md:aspect-[4/3] lg:aspect-square overflow-hidden rounded-2xl">
+        <div className="animate-fade will-animate relative w-full aspect-square md:aspect-[4/3] lg:aspect-square overflow-hidden rounded-2xl">
           <img 
             src="/assets/docotr cabin.jpeg" 
             alt="Doctor's Cabin" 
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         </div>
