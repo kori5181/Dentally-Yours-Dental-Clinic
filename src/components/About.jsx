@@ -67,7 +67,7 @@ const About = () => {
             href="https://wa.me/9187348684" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="about-element magnetic-btn mt-6 bg-primary text-white px-8 py-3 rounded-md font-sans font-bold tracking-wide hover:bg-opacity-90 transition-all text-center"
+            className="about-element magnetic-btn mt-6 bg-primary text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest inline-flex items-center justify-center hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300"
           >
             Call Now
           </a>
@@ -76,8 +76,8 @@ const About = () => {
         {/* Image Content */}
         <div className="about-element relative w-full aspect-square md:aspect-[4/3] lg:aspect-square overflow-hidden rounded-2xl">
           <img 
-            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=2000" 
-            alt="Dental clinic interior" 
+            src="/assets/docotr cabin.jpeg" 
+            alt="Doctor's Cabin" 
             className="w-full h-full object-cover"
           />
         </div>

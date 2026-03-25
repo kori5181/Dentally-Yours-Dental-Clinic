@@ -82,12 +82,12 @@ const Features = () => {
               {/* Subtle hover gradient bloom behind icon */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               
-              <div className="mb-8 w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500 ease-out group-hover:scale-110 shadow-sm relative z-10 box-border">
+              <div className="mb-8 w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center text-black group-hover:bg-primary group-hover:text-white transition-colors duration-500 ease-out group-hover:scale-110 shadow-sm relative z-10 box-border">
                 <div className="transform transition-transform duration-500 group-hover:scale-[1.15] group-hover:rotate-6">
                   {feature.icon}
                 </div>
               </div>
-              <h3 className="font-sans font-bold text-xl text-primary mb-3 relative z-10">{feature.title}</h3>
+              <h3 className="font-sans font-bold text-xl text-black mb-3 relative z-10">{feature.title}</h3>
               <p className="text-dark/70 text-[15px] md:text-base font-sans leading-relaxed relative z-10">
                 {feature.desc}
               </p>

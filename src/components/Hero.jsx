@@ -29,33 +29,44 @@ const Hero = () => {
       {/* Background Image & Gradient overlay */}
       <div className="absolute inset-0 z-0 bg-dark">
         <img 
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2669" 
-          alt="Modern dental clinic interior" 
-          className="w-full h-full object-cover scale-[1.02] opacity-40 mix-blend-luminosity"
+          src="/assets/homepage pic.png" 
+          alt="The Roots Dentistry Clinic" 
+          className="w-full h-full object-cover scale-[1.05] opacity-[0.85]"
         />
-        {/* Soft Teal to Slate Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-primary/30" />
+        {/* Sleek Dark Overlays for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 pb-20 md:pb-32 flex flex-col items-start gap-6 pt-24 md:pt-0">
-        <div className="flex flex-col">
-          <h1 className="hero-element text-background font-sans font-bold text-3xl md:text-5xl tracking-tighter leading-[1.1] mb-2">
-            The Roots Dentistry
-          </h1>
-          <h2 className="hero-element font-normal text-white text-4xl md:text-6xl lg:text-8xl leading-[1.1] max-w-4xl">
-            Best Clinic in Talaghattapura.
-          </h2>
+      <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 pb-20 md:pb-32 pt-32 md:pt-48 flex items-end">
+        <div className="w-full max-w-7xl mx-auto flex flex-col items-start gap-6">
+          <div className="flex flex-col max-w-3xl">
+            <div className="hero-element flex items-center gap-4 mb-6">
+              <span className="h-[1px] w-12 bg-accent opacity-80"></span>
+              <h1 className="text-accent/90 font-sans font-semibold text-sm md:text-base uppercase tracking-[0.2em]">
+                The Roots Dentistry
+              </h1>
+            </div>
+            
+            <h2 className="hero-element font-serif font-medium text-white text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] tracking-tight mb-8">
+              Best Clinic in <br className="hidden md:block" />Talaghattapura.
+            </h2>
+
+            <div className="hero-element flex items-center gap-3 text-white/70 font-sans text-base md:text-lg font-light tracking-wide pl-4 border-l border-white/20">
+              <p>Led by <span className="font-semibold text-accent">Dr. Sowndarya H</span></p>
+            </div>
+          </div>
+          
+          <a 
+            href="https://wa.me/9187348684" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hero-element magnetic-btn mt-6 bg-accent text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest flex items-center justify-center gap-3 hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300 inline-flex"
+          >
+            Book Appointment
+          </a>
         </div>
-        
-        <a 
-          href="https://wa.me/9187348684" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="hero-element magnetic-btn mt-6 bg-accent text-white px-8 py-4 rounded-md font-sans font-bold tracking-wide flex items-center gap-3 hover:bg-opacity-90 transition-all inline-flex"
-        >
-          Book Appointment
-        </a>
       </div>
     </section>
   );
