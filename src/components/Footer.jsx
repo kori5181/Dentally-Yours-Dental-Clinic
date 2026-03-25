@@ -25,10 +25,10 @@ const Footer = () => {
         <div className="md:col-span-3 flex flex-col gap-6">
           <h4 className="font-sans font-bold text-white tracking-wide">Clinic</h4>
           <div className="flex flex-col gap-4">
+            <a href="#about" className="font-sans text-white/50 hover:text-accent transition-colors text-sm font-medium">About</a>
+            <a href="#features" className="font-sans text-white/50 hover:text-accent transition-colors text-sm font-medium">Why</a>
             <a href="#services" className="font-sans text-white/50 hover:text-accent transition-colors text-sm font-medium">Services</a>
-            <a href="#philosophy" className="font-sans text-white/50 hover:text-accent transition-colors text-sm font-medium">Philosophy</a>
-            <a href="#protocol" className="font-sans text-white/50 hover:text-accent transition-colors text-sm font-medium">Protocol</a>
-            <a href="#doctors" className="font-sans text-white/50 hover:text-accent transition-colors text-sm font-medium">Doctors</a>
+            <a href="#doctors" className="font-sans text-white/50 hover:text-accent transition-colors text-sm font-medium">Doctor</a>
           </div>
         </div>
 
