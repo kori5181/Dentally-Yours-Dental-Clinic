@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -9,6 +11,13 @@ import CTA from './components/CTA';
 import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    // Prevents ScrollTrigger from recalculating positions on mobile when the URL bar hides/shows, 
+    // which causes the jittery "jumping" effect.
+    ScrollTrigger.config({ ignoreMobileResize: true });
+  }, []);
+
   return (
     <div className="relative w-full bg-background min-h-screen selection:bg-accent/30 selection:text-white">
       <Navbar />
