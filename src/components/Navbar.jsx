@@ -32,10 +32,7 @@ const Navbar = () => {
         <img 
           src="/assets/throotdentistrylogo .png" 
           alt="The Roots Dentistry" 
-          className={cn(
-            "h-12 w-auto object-contain transition-all duration-300", 
-            scrolled ? "mix-blend-multiply" : "invert grayscale contrast-200 mix-blend-screen"
-          )} 
+          className="h-14 md:h-16 w-auto object-contain bg-white rounded-2xl p-1 shadow-sm transition-all duration-300" 
         />
       </div>
       
