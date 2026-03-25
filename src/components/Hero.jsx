@@ -31,7 +31,7 @@ const Hero = () => {
         <img 
           src="/assets/homepage pic.png" 
           alt="The Roots Dentistry Clinic" 
-          className="w-full h-full object-cover scale-[1.05] opacity-[0.85]"
+          className="w-full h-full object-cover object-right md:object-center scale-[1.05] opacity-[0.85]"
         />
         {/* Sleek Dark Overlays for Text Readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/60 to-transparent" />

@@ -29,13 +29,13 @@ const Navbar = () => {
       )}
     >
       <div className="flex-shrink-0 flex items-center">
-        <img 
-          src="/assets/throotdentistrylogo .png" 
-          alt="The Roots Dentistry" 
-          className="h-14 md:h-16 w-auto object-contain bg-white rounded-2xl p-1 shadow-sm transition-all duration-300" 
+        <img -54.03wm8q 32T1RQ  E1WS
+        src="/assets/throotdentistrylogo .png"
+        alt="The Roots Dentistry"
+        className="h-14 md:h-16 w-auto object-contain bg-white rounded-2xl p-1 shadow-sm transition-all duration-300" 
         />
       </div>
-      
+
       <div className="hidden md:flex items-center gap-8 font-sans text-sm font-semibold tracking-wide">
         <a href="#about" className="hover-lift hover:text-accent transition-colors">About</a>
         <a href="#features" className="hover-lift hover:text-accent transition-colors">Why Us</a>
@@ -44,20 +44,20 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center gap-3">
-        <a 
-          href="https://wa.me/9187348684" 
-          target="_blank" 
+        <a
+          href="https://wa.me/9187348684"
+          target="_blank"
           rel="noopener noreferrer"
           className={cn(
-          "magnetic-btn flex items-center gap-2 px-5 py-2.5 rounded-full font-sans text-sm font-bold transition-colors border",
-          scrolled ? "bg-accent text-white border-accent hover:bg-opacity-90" : "bg-white/20 text-white border-white/20 hover:bg-white/30 hover:border-white/40"
-        )}>
+            "magnetic-btn flex items-center gap-2 px-5 py-2.5 rounded-full font-sans text-sm font-bold transition-colors border",
+            scrolled ? "bg-accent text-white border-accent hover:bg-opacity-90" : "bg-white/20 text-white border-white/20 hover:bg-white/30 hover:border-white/40"
+          )}>
           <MessageCircle className="w-4 h-4" />
           <span className="hidden sm:inline">WhatsApp Us</span>
         </a>
 
-        <button 
-          onClick={() => setIsOpen(!isOpen)} 
+        <button
+          onClick={() => setIsOpen(!isOpen)}
           className={cn(
             "md:hidden p-2 rounded-full border transition-colors",
             scrolled ? "border-primary/20 text-primary hover:bg-primary/5" : "border-white/20 text-white hover:bg-white/10"
