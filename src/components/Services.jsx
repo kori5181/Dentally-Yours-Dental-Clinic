@@ -8,7 +8,7 @@ const servicesList = [
   {
     title: "Root Canal Treatment",
     desc: "Painless procedures to save your natural teeth.",
-    img: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop"
+    img: "/assets/rootcanal.jpg"
   },
   {
     title: "Cosmetics & Veneers",
