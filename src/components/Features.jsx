@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { 
@@ -48,6 +48,9 @@ const featuresList = [
 
 const Features = () => {
   const sectionRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [isHoveringSection, setIsHoveringSection] = useState(false);
+  const intervalRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -61,8 +64,27 @@ const Features = () => {
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    if (isHoveringSection) {
+      setActiveIndex(0);
+      intervalRef.current = setInterval(() => {
+        setActiveIndex((prev) => (prev === null ? 0 : (prev + 1) % featuresList.length));
+      }, 2000);
+    } else {
+      clearInterval(intervalRef.current);
+      setActiveIndex(null);
+    }
+    return () => clearInterval(intervalRef.current);
+  }, [isHoveringSection]);
+
   return (
-    <section ref={sectionRef} id="features" className="py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-primary/5 z-20 relative">
+    <section 
+      ref={sectionRef} 
+      id="features" 
+      className="py-24 md:py-32 px-6 md:px-16 lg:px-24 bg-primary/5 z-20 relative"
+      onMouseEnter={() => setIsHoveringSection(true)}
+      onMouseLeave={() => setIsHoveringSection(false)}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col mb-20 text-center items-center">
           <span className="font-bold text-accent uppercase tracking-wider text-sm mb-2">What We Do</span>
@@ -75,23 +97,45 @@ const Features = () => {
         </div>
         
         <div className="feature-grid will-animate grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {featuresList.map((feature, idx) => (
-            <div 
-              key={idx} 
-              className="group flex flex-col items-start text-left bg-white/70 hover:bg-white p-8 md:p-10 rounded-[2.5rem] border border-white/50 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] cursor-default overflow-hidden relative"
-            >
-
-              <div className="mb-8 w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center text-black group-hover:bg-primary group-hover:text-white transition-colors duration-500 ease-out group-hover:scale-110 shadow-sm relative z-10 box-border">
-                <div className="transform transition-transform duration-500 group-hover:scale-[1.15] group-hover:rotate-6">
-                  {feature.icon}
+          {featuresList.map((feature, idx) => {
+            const isActive = activeIndex === idx;
+            
+            return (
+              <div 
+                key={idx} 
+                onMouseEnter={() => {
+                  setIsHoveringSection(false); // Pause auto-play if user manually hovers a card
+                  setActiveIndex(idx);
+                }}
+                onMouseLeave={() => {
+                  setActiveIndex(null);
+                  setIsHoveringSection(true); // Resume auto-play when user unhovers
+                }}
+                className={cn(
+                  "group flex flex-col items-start text-left bg-white/70 p-8 md:p-10 rounded-[2.5rem] border border-white/50 shadow-sm transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] cursor-default overflow-hidden relative",
+                  isActive ? "bg-white shadow-2xl -translate-y-2" : "hover:bg-white hover:shadow-2xl hover:-translate-y-2"
+                )}
+              >
+                <div className={cn(
+                  "mb-8 w-14 h-14 rounded-2xl flex items-center justify-center transition-colors duration-500 ease-out shadow-sm relative z-10 box-border",
+                  isActive 
+                    ? "bg-primary text-white scale-110" 
+                    : "bg-gray-100 text-black group-hover:bg-primary group-hover:text-white group-hover:scale-110"
+                )}>
+                  <div className={cn(
+                    "transform transition-transform duration-500",
+                    isActive ? "scale-[1.15] rotate-6" : "group-hover:scale-[1.15] group-hover:rotate-6"
+                  )}>
+                    {feature.icon}
+                  </div>
                 </div>
+                <h3 className="font-sans font-bold text-xl text-black mb-3 relative z-10">{feature.title}</h3>
+                <p className="text-dark/70 text-[15px] md:text-base font-sans leading-relaxed relative z-10">
+                  {feature.desc}
+                </p>
               </div>
-              <h3 className="font-sans font-bold text-xl text-black mb-3 relative z-10">{feature.title}</h3>
-              <p className="text-dark/70 text-[15px] md:text-base font-sans leading-relaxed relative z-10">
-                {feature.desc}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
