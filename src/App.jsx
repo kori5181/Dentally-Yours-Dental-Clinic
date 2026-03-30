@@ -7,7 +7,9 @@ import About from './components/About';
 import Features from './components/Features';
 import Services from './components/Services';
 import Doctors from './components/Doctors';
+import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
+import Location from './components/Location';
 import Footer from './components/Footer';
 
 function App() {
@@ -26,7 +28,9 @@ function App() {
       <Features />
       <Services />
       <Doctors />
+      <Testimonials />
       <CTA />
+      <Location />
       <Footer />
     </div>
   );
