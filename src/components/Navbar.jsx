@@ -45,7 +45,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-3">
         <a
-          href="https://wa.me/9187348684"
+          href="tel:09187348684"
           target="_blank"
           rel="noopener noreferrer"
           className={cn(

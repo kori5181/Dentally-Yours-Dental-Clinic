@@ -54,7 +54,7 @@ const Doctors = () => {
             </p>
 
             <a
-              href="https://wa.me/9187348684"
+              href="tel:09187348684"
               target="_blank"
               rel="noopener noreferrer"
               className="magnetic-btn bg-primary text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300 inline-flex items-center justify-center gap-3"

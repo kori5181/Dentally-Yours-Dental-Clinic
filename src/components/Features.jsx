@@ -70,7 +70,7 @@ const Features = () => {
             Why Choose us?
           </h2>
           <p className="font-sans text-dark/70 text-lg md:text-[17px] mt-6 max-w-3xl font-light leading-relaxed">
-            At <strong>The Roots Dentistry</strong>, we believe in providing our patients with treatments which includes their involvement at all times. Our patients are the stars where we have set a standard, in providing a dental care with a feeling of being at home.
+            At <strong>The Roots Dentistry</strong>, we believe in providing our patients with treatments which includes their involvement at all times. Our patients are the stars where we have set a standard, in providing dental care with a feeling of being at home.
           </p>
         </div>
         

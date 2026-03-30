@@ -74,7 +74,7 @@ const Location = () => {
           className="w-full h-[400px] md:h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-dark/5 relative bg-dark/5"
         >
           <iframe 
-            src="https://maps.google.com/maps?q=12.8663339,77.5353678&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=The+Roots+Dentistry,+Talaghattapura,+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%" 
             height="100%" 
             style={{ border: 0 }}

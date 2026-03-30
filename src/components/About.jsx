@@ -34,7 +34,7 @@ const About = () => {
               Welcome to The Roots Dentistry
             </h2>
             <p className="text-dark/70 text-lg leading-relaxed mb-6">
-              Welcome to The Roots Dentistry where your journey to optimal oral health and a confident smile begins. Our team of experienced dentists is committed to providing personalized care in a warm and welcoming environment.
+              Welcome to The Roots Dentistry, where your journey to optimal oral health and a confident smile begins. Our team of experienced dentists is committed to providing personalized care in a warm and welcoming environment.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ const About = () => {
           </div>
 
           <a 
-            href="https://wa.me/9187348684" 
+            href="tel:09187348684" 
             target="_blank" 
             rel="noopener noreferrer"
             className="magnetic-btn mt-6 bg-primary text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest inline-flex items-center justify-center gap-3 hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300"
