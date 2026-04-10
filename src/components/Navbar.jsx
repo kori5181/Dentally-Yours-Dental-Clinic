@@ -29,11 +29,9 @@ const Navbar = () => {
       )}
     >
       <div className="flex-shrink-0 flex items-center">
-        <img 
-          src="/assets/throotdentistrylogo .png"
-          alt="Dentally Yours Dental Clinic"
-          className="h-14 md:h-16 w-auto object-contain bg-white rounded-2xl p-1 shadow-sm transition-all duration-300" 
-        />
+        <span className="font-serif font-bold text-xl md:text-2xl tracking-wide">
+          Dentally Yours
+        </span>
       </div>
 
       <div className="hidden md:flex items-center gap-8 font-sans text-sm font-semibold tracking-wide">

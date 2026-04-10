@@ -9,11 +9,9 @@ const Footer = () => {
         {/* Brand Column */}
         <div className="md:col-span-5 flex flex-col items-start">
           <div className="mb-6 flex items-center gap-1">
-            <img
-              src="/assets/throotdentistrylogo .png"
-              alt="Dentally Yours Dental Clinic"
-              className="h-24 w-auto object-contain bg-white rounded-3xl p-2 shadow-md"
-            />
+            <span className="font-serif font-bold text-3xl tracking-wide text-white">
+              Dentally Yours
+            </span>
           </div>
           <p className="font-sans text-white/50 max-w-sm mb-8 font-light leading-relaxed">
             Ultra-modern multi-speciality dental clinic providing flawless and soothing dental experiences in Whitefield, Bengaluru.
