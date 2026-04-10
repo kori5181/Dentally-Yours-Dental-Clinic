@@ -63,9 +63,8 @@ const Location = () => {
             Visit Our Clinic
           </h2>
           <p className="text-dark/60 font-sans max-w-2xl mx-auto text-lg leading-relaxed">
-            Kamala Ark No.3, First floor, Kumar layout 60 Ft. road,<br className="hidden md:block"/> 
-            Kanakapura Main Rd, Judicial Layout 2nd Phase,<br className="hidden md:block"/> 
-            Talaghattapura, Bengaluru, Karnataka 560109
+            Immadihalli Main Rd, Immadihalli, Whitefield,<br className="hidden md:block"/> 
+            Bengaluru, Karnataka 560066
           </p>
         </div>
 
@@ -74,14 +73,14 @@ const Location = () => {
           className="w-full h-[400px] md:h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-dark/5 relative bg-dark/5"
         >
           <iframe 
-            src="https://maps.google.com/maps?q=The+Roots+Dentistry,+Talaghattapura,+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Dentally+Yours+Dental+Clinic,+Whitefield,+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%" 
             height="100%" 
             style={{ border: 0 }}
             allowFullScreen="" 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            title="The Roots Dentistry Location"
+            title="Dentally Yours Dental Clinic Location"
             className="absolute inset-0 grayscale-[20%] contrast-[1.1]"
           ></iframe>
         </div>

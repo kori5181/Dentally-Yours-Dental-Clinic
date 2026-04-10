@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="flex-shrink-0 flex items-center">
         <img 
           src="/assets/throotdentistrylogo .png"
-          alt="The Roots Dentistry"
+          alt="Dentally Yours Dental Clinic"
           className="h-14 md:h-16 w-auto object-contain bg-white rounded-2xl p-1 shadow-sm transition-all duration-300" 
         />
       </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-3">
         <a
-          href="tel:09187348684"
+          href="tel:09611854058"
           target="_blank"
           rel="noopener noreferrer"
           className={cn(

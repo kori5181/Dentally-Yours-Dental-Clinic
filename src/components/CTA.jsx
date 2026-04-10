@@ -54,7 +54,7 @@ const CTA = () => {
         </div>
 
         <a
-          href="tel:09187348684"
+          href="tel:09611854058"
           target="_blank"
           rel="noopener noreferrer"
           className="relative z-10 magnetic-btn bg-accent text-white px-12 py-5 rounded-full font-sans text-sm font-bold uppercase tracking-widest hover:shadow-2xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300 inline-flex items-center justify-center gap-3 flex-shrink-0"

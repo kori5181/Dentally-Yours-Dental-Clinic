@@ -31,10 +31,10 @@ const About = () => {
               About Our Clinic
             </span>
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-dark tracking-tight leading-tight mb-6">
-              Welcome to The Roots Dentistry
+              Welcome to Dentally Yours Dental Clinic
             </h2>
             <p className="text-dark/70 text-lg leading-relaxed mb-6">
-              Welcome to The Roots Dentistry, where your journey to optimal oral health and a confident smile begins. Our team of experienced dentists is committed to providing personalized care in a warm and welcoming environment.
+              Welcome to Dentally Yours Dental Clinic, where your journey to optimal oral health and a confident smile begins. Our team of experienced dentists is committed to providing personalized care in a warm and welcoming environment.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const About = () => {
               <div>
                 <h3 className="font-bold text-xl text-dark mb-2">Expert Care</h3>
                 <p className="text-dark/70 leading-relaxed">
-                  Our team of skilled dental professionals at The Roots Dentistry is dedicated to providing expert care tailored to your individual needs.
+                  Our team of skilled dental professionals at Dentally Yours Dental Clinic is dedicated to providing expert care tailored to your individual needs.
                 </p>
               </div>
             </div>
@@ -58,14 +58,14 @@ const About = () => {
               <div>
                 <h3 className="font-bold text-xl text-dark mb-2">Personalized Approach</h3>
                 <p className="text-dark/70 leading-relaxed">
-                  At The Roots Dentistry, we understand that every patient is unique, which is why we take a personalized approach to your dental care.
+                  At Dentally Yours Dental Clinic, we understand that every patient is unique, which is why we take a personalized approach to your dental care.
                 </p>
               </div>
             </div>
           </div>
 
           <a 
-            href="tel:09187348684" 
+            href="tel:09611854058" 
             target="_blank" 
             rel="noopener noreferrer"
             className="magnetic-btn mt-6 bg-primary text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest inline-flex items-center justify-center gap-3 hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300"
@@ -77,7 +77,7 @@ const About = () => {
         {/* Image Content */}
         <div className="animate-fade will-animate relative w-full aspect-square md:aspect-[4/3] lg:aspect-square overflow-hidden rounded-2xl">
           <img 
-            src="/assets/docotr cabin.jpeg" 
+            src="/assets/About us - section.jpg" 
             alt="Doctor's Cabin" 
             loading="lazy"
             className="w-full h-full object-cover"

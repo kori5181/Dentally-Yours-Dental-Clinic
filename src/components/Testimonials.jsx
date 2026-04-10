@@ -9,31 +9,31 @@ const reviews = [
   {
     author: "Suhas S",
     date: "1 day ago",
-    content: "I recently visited The Roots Dentistry for a tooth implant procedure and had an excellent experience. The clinic is clean, modern, and very welcoming, and the entire team was professional, caring, and attentive throughout. Dr Sowndarya provided a clear explanation of the process, making me feel at ease from start to finish. Highly recommend to everyone.",
+    content: "I recently visited Dentally Yours Dental Clinic for a tooth implant procedure and had an excellent experience. The clinic is clean, modern, and very welcoming, and the entire team was professional, caring, and attentive throughout. Dr Shriya provided a clear explanation of the process, making me feel at ease from start to finish. Highly recommend to everyone.",
     rating: 5,
   },
   {
     author: "samith d shetty",
     date: "a week ago",
-    content: "Had a fantastic experience getting a root canal at this clinic. Dr Sowndarya is highly skilled and made the entire process quick and painless. The clinic is very well-maintained and beautiful. Highly recommend for any dental needs!",
+    content: "Had a fantastic experience getting a root canal at this clinic. Dr Shriya is highly skilled and made the entire process quick and painless. The clinic is very well-maintained and beautiful. Highly recommend for any dental needs!",
     rating: 5,
   },
   {
     author: "Chiragasourabh",
     date: "a week ago",
-    content: "Had a really good experience here. Sowndarya was humble, honest, and explained things clearly without pushing unnecessary treatments. You can tell the advice comes from genuine care rather than business. Definitely a place you can trust if you want straightforward and professional dental guidance, care and treatment .",
+    content: "Had a really good experience here. Shriya was humble, honest, and explained things clearly without pushing unnecessary treatments. You can tell the advice comes from genuine care rather than business. Definitely a place you can trust if you want straightforward and professional dental guidance, care and treatment .",
     rating: 5,
   },
   {
     author: "Renuka Sherugar",
     date: "2 weeks ago",
-    content: "I recently visited Dr. Sowndarya for a root canal, and I couldn't be happier with the experience. I was in a lot of pain and needed an emergency root canal. she explained the procedure clearly, worked quickly to save my tooth, and the relief was instant. I highly recommend her!",
+    content: "I recently visited Dr. Shriya for a root canal, and I couldn't be happier with the experience. I was in a lot of pain and needed an emergency root canal. she explained the procedure clearly, worked quickly to save my tooth, and the relief was instant. I highly recommend her!",
     rating: 5,
   },
   {
     author: "Skanda Prasad",
     date: "a month ago",
-    content: "Very clean and hygienic clinic new clinic in Kanakapura Road.",
+    content: "Very clean and hygienic clinic new clinic in Whitefield.",
     rating: 5,
   }
 ];

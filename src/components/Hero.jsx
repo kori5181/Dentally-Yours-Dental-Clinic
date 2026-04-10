@@ -29,10 +29,10 @@ const Hero = () => {
       {/* Background Image & Gradient overlay */}
       <div className="absolute inset-0 z-0 bg-dark">
         <img 
-          src="/assets/homepage pic.png" 
-          alt="The Roots Dentistry Clinic" 
+          src="/assets/header section.jpg" 
+          alt="Dentally Yours Dental Clinic" 
           fetchPriority="high"
-          className="w-full h-full object-cover object-right md:object-center scale-[1.05] opacity-[0.85]"
+          className="w-full h-full object-cover object-center scale-[1.05] opacity-[0.85]"
         />
         {/* Sleek Dark Overlays for Text Readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/60 to-transparent" />
@@ -46,21 +46,21 @@ const Hero = () => {
             <div className="hero-element flex items-center gap-4 mb-6">
               <span className="h-[1px] w-12 bg-accent opacity-80"></span>
               <h1 className="text-accent/90 font-sans font-semibold text-sm md:text-base uppercase tracking-[0.2em]">
-                The Roots Dentistry
+                Dentally Yours Dental Clinic
               </h1>
             </div>
             
             <h2 className="hero-element font-serif font-medium text-white text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] tracking-tight mb-8">
-              Best Clinic in <br className="hidden md:block" />Talaghattapura.
+              Best Clinic in <br className="hidden md:block" />Whitefield.
             </h2>
 
             <div className="hero-element flex items-center gap-3 text-white/70 font-sans text-base md:text-lg font-light tracking-wide pl-4 border-l border-white/20">
-              <p>Led by <span className="font-semibold text-accent">Dr. Sowndarya H</span></p>
+              <p>Led by <span className="font-semibold text-accent">Dr. Shriya</span></p>
             </div>
           </div>
           
           <a 
-            href="tel:09187348684" 
+            href="tel:09611854058" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hero-element magnetic-btn mt-6 bg-accent text-white px-10 py-4 rounded-full font-sans text-sm font-semibold uppercase tracking-widest flex items-center justify-center gap-3 hover:shadow-xl hover:-translate-y-1 hover:bg-opacity-90 transition-all duration-300 inline-flex"

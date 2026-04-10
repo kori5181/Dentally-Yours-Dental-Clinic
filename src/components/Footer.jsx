@@ -11,12 +11,12 @@ const Footer = () => {
           <div className="mb-6 flex items-center gap-1">
             <img
               src="/assets/throotdentistrylogo .png"
-              alt="The Roots Dentistry"
+              alt="Dentally Yours Dental Clinic"
               className="h-24 w-auto object-contain bg-white rounded-3xl p-2 shadow-md"
             />
           </div>
           <p className="font-sans text-white/50 max-w-sm mb-8 font-light leading-relaxed">
-            Ultra-modern multi-speciality dental clinic providing flawless and soothing dental experiences in Talaghattapura, Bengaluru.
+            Ultra-modern multi-speciality dental clinic providing flawless and soothing dental experiences in Whitefield, Bengaluru.
           </p>
           
           <div className="flex items-center gap-4">
@@ -48,20 +48,17 @@ const Footer = () => {
         <div className="md:col-span-4 flex flex-col gap-6">
           <h4 className="font-sans font-bold text-white tracking-wide">Visit</h4>
           <div className="font-sans text-white/50 text-sm leading-relaxed font-medium">
-            Kamala Ark No.3, First floor,<br />
-            Kumar layout 60 Ft. road,<br />
-            Kanakapura Main Rd, Judicial Layout 2nd Phase,<br />
-            Talaghattapura, Bengaluru,<br />
-            Karnataka 560109
+            Immadihalli Main Rd, Immadihalli, Whitefield,<br />
+            Bengaluru, Karnataka 560066
           </div>
 
           <a
-            href="tel:09187348684"
+            href="tel:09611854058"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex max-w-fit items-center gap-2 px-4 py-2 mt-2 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-full text-white font-sans text-sm font-bold transition-all"
           >
-            Call Us: 09187348684
+            Call Us: 09611854058
           </a>
 
           <div className="font-sans text-white/50 text-sm leading-relaxed font-medium mt-2">
@@ -74,7 +71,7 @@ const Footer = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm font-sans text-white/50 font-medium pt-8">
         <div className="text-center md:text-left">
-          &copy; {new Date().getFullYear()} The Roots Dentistry. All rights reserved.
+          &copy; {new Date().getFullYear()} Dentally Yours Dental Clinic. All rights reserved.
         </div>
         <div className="text-center md:text-right">
           Designed by <a href="https://wa.me/917558051709?text=Hey%20Steve.%20Loved%20the%20Roots%20Dentistry.%20Would%20love%20to%20know%20if%20we%20can%20connect%20and%20work%20together." target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:text-white transition-colors">Steve Koruthu</a>
